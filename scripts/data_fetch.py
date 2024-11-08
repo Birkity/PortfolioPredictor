@@ -30,7 +30,7 @@ try:
     logger.info("Data download was successful")
 
 
-    data_directory = "../data"
+    data_directory = "C:/Users/USER/Documents/OPLearning/10_Academy/Week_11/data"
     if not os.path.isdir(data_directory):
         os.makedirs(data_directory)
 
