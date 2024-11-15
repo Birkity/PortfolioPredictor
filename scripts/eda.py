@@ -1,32 +1,30 @@
-import matplotlib.pyplot as plt
-import seaborn as sns
+import logging
+import pandas as pd
 
-def plot_trends(data: pd.DataFrame):
+def perform_eda(data, dataset_name):
     """
-    Plot time series trends for closing prices.
-
-    Args:
-        data (pd.DataFrame): Processed data.
-    """
-    plt.figure(figsize=(12, 6))
-    plt.plot(data.index, data['Adj Close'], label='Adjusted Close')
-    plt.title('Adjusted Close Price Over Time')
-    plt.xlabel('Date')
-    plt.ylabel('Price')
-    plt.legend()
-    plt.show()
-
-def plot_volatility(data: pd.DataFrame):
-    """
-    Plot volatility over time.
+    Perform exploratory data analysis on a dataset.
 
     Args:
-        data (pd.DataFrame): Processed data.
+        data (pd.DataFrame): Dataset to analyze.
+        dataset_name (str): Name of the dataset.
+
+    Returns:
+        None
     """
-    plt.figure(figsize=(12, 6))
-    plt.plot(data.index, data['Volatility'], label='Volatility', color='orange')
-    plt.title('Volatility Over Time')
-    plt.xlabel('Date')
-    plt.ylabel('Volatility')
-    plt.legend()
-    plt.show()
+    logging.info("Performing EDA for dataset: %s", dataset_name)
+    try:
+        # Summary statistics
+        logging.info("Summary statistics:\n%s", data.describe())
+
+        # Correlation analysis
+        corr = data.corr()
+        logging.info("Correlation matrix:\n%s", corr)
+
+        # Identify outliers
+        outliers = data[(data['Close'] > data['Close'].quantile(0.99)) |
+                        (data['Close'] < data['Close'].quantile(0.01))]
+        logging.info("Outliers identified: %d", len(outliers))
+    except Exception as e:
+        logging.error("Error during EDA: %s", str(e))
+        raise

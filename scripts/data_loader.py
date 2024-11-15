@@ -1,21 +1,21 @@
-import pandas as pd
-import os
 import logging
+import pandas as pd
 
-def load_data(file_path: str) -> pd.DataFrame:
-    logging.info("Load the data...")
+def load_data(filepath):
     """
     Load data from a CSV file.
 
     Args:
-        file_path (str): Path to the CSV file.
+        filepath (str): Path to the CSV file.
 
     Returns:
-        pd.DataFrame: Loaded data.
+        pd.DataFrame: Loaded data as a DataFrame.
     """
-    
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"{file_path} does not exist.")
-    data = pd.read_csv(file_path, parse_dates=['Date'])
-    data.set_index('Date', inplace=True)
-    return data
+    logging.info("Loading data from %s", filepath)
+    try:
+        data = pd.read_csv(filepath)
+        logging.info("Data loaded successfully. Shape: %s", data.shape)
+        return data
+    except Exception as e:
+        logging.error("Failed to load data from %s: %s", filepath, str(e))
+        raise
