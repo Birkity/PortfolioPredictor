@@ -22,3 +22,38 @@
 2024-11-15 20:59:09,106 - DEBUG - CACHEDIR=C:\Users\USER\.matplotlib
 2024-11-15 20:59:09,183 - DEBUG - Using fontManager instance from C:\Users\USER\.matplotlib\fontlist-v390.json
 2024-11-15 20:59:50,784 - INFO - Logger initialized. Log file: logs\task1_pipeline.log
+2024-11-15 21:00:22,630 - INFO - Loading datasets.
+2024-11-15 21:01:13,084 - INFO - Cleaning datasets.
+2024-11-15 21:01:13,087 - INFO - Cleaning dataset: TSLA
+2024-11-15 21:01:13,087 - INFO - Starting data cleaning.
+2024-11-15 21:01:13,090 - INFO - Initial data shape: (2014, 6)
+2024-11-15 21:01:17,556 - INFO - Ensured numeric type for column: Open
+2024-11-15 21:01:17,556 - INFO - Ensured numeric type for column: High
+2024-11-15 21:01:17,569 - INFO - Ensured numeric type for column: Low
+2024-11-15 21:01:17,569 - INFO - Ensured numeric type for column: Close
+2024-11-15 21:01:17,569 - INFO - Ensured numeric type for column: Adj Close
+2024-11-15 21:01:17,569 - INFO - Ensured numeric type for column: Volume
+2024-11-15 21:01:17,584 - INFO - Final data shape: (2014, 6)
+2024-11-15 21:01:17,584 - INFO - Data cleaning completed.
+2024-11-15 21:01:17,584 - INFO - Cleaning dataset: SPY
+2024-11-15 21:01:17,584 - INFO - Starting data cleaning.
+2024-11-15 21:01:17,584 - INFO - Initial data shape: (2014, 6)
+2024-11-15 21:01:17,592 - INFO - Ensured numeric type for column: Open
+2024-11-15 21:01:17,592 - INFO - Ensured numeric type for column: High
+2024-11-15 21:01:17,600 - INFO - Ensured numeric type for column: Low
+2024-11-15 21:01:17,600 - INFO - Ensured numeric type for column: Close
+2024-11-15 21:01:17,600 - INFO - Ensured numeric type for column: Adj Close
+2024-11-15 21:01:17,600 - INFO - Ensured numeric type for column: Volume
+2024-11-15 21:01:17,600 - INFO - Final data shape: (2014, 6)
+2024-11-15 21:01:17,600 - INFO - Data cleaning completed.
+2024-11-15 21:01:17,600 - INFO - Cleaning dataset: BND
+2024-11-15 21:01:17,608 - INFO - Starting data cleaning.
+2024-11-15 21:01:17,686 - INFO - Initial data shape: (2014, 6)
+2024-11-15 21:01:17,703 - INFO - Ensured numeric type for column: Open
+2024-11-15 21:01:17,802 - INFO - Ensured numeric type for column: High
+2024-11-15 21:01:17,802 - INFO - Ensured numeric type for column: Low
+2024-11-15 21:01:17,802 - INFO - Ensured numeric type for column: Close
+2024-11-15 21:01:17,810 - INFO - Ensured numeric type for column: Adj Close
+2024-11-15 21:01:17,810 - INFO - Ensured numeric type for column: Volume
+2024-11-15 21:01:17,819 - INFO - Final data shape: (2014, 6)
+2024-11-15 21:01:17,819 - INFO - Data cleaning completed.
