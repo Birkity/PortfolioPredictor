@@ -15,3 +15,10 @@
 2024-11-15 20:14:27,388 - INFO - Initial data shape: (0, 0)
 2024-11-15 20:14:27,388 - INFO - Final data shape: (0, 0)
 2024-11-15 20:14:27,403 - INFO - Data cleaning completed.
+2024-11-15 20:59:02,847 - DEBUG - matplotlib data path: c:\Users\USER\Documents\OPLearning\10_Academy\Week_11\myenv\Lib\site-packages\matplotlib\mpl-data
+2024-11-15 20:59:03,223 - DEBUG - CONFIGDIR=C:\Users\USER\.matplotlib
+2024-11-15 20:59:07,669 - DEBUG - interactive is False
+2024-11-15 20:59:07,669 - DEBUG - platform is win32
+2024-11-15 20:59:09,106 - DEBUG - CACHEDIR=C:\Users\USER\.matplotlib
+2024-11-15 20:59:09,183 - DEBUG - Using fontManager instance from C:\Users\USER\.matplotlib\fontlist-v390.json
+2024-11-15 20:59:50,784 - INFO - Logger initialized. Log file: logs\task1_pipeline.log
