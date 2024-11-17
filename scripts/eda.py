@@ -1,5 +1,7 @@
 import logging
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 def perform_eda(data, dataset_name):
     """
@@ -25,6 +27,14 @@ def perform_eda(data, dataset_name):
         outliers = data[(data['Close'] > data['Close'].quantile(0.99)) |
                         (data['Close'] < data['Close'].quantile(0.01))]
         logging.info("Outliers identified: %d", len(outliers))
+
+        # Visualize correlation matrix
+        plt.figure(figsize=(10, 8))
+        sns.heatmap(corr, annot=True, cmap='coolwarm', fmt='.2f')
+        plt.title('Correlation Matrix')
+        plt.tight_layout()
+        plt.show()
+
     except Exception as e:
         logging.error("Error during EDA: %s", str(e))
         raise

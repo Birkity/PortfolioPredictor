@@ -1,5 +1,6 @@
 import logging
 import matplotlib.pyplot as plt
+import pandas as pd
 
 def plot_column(data, column, dataset_name):
     """
