@@ -2532,3 +2532,141 @@ Adj Close  0.603090  0.607769  0.599090  0.604387   1.000000  0.508142
 Volume    -0.033129 -0.019434 -0.048537 -0.034605   0.508142  1.000000
 2024-11-17 12:38:13,215 - INFO - Outliers identified: 42
 2024-11-17 12:38:13,238 - DEBUG - locator: <matplotlib.ticker.AutoLocator object at 0x000001FA1D09B790>
+2024-11-17 12:49:54,104 - INFO - Applying feature engineering.
+2024-11-17 12:49:54,105 - INFO - Adding technical indicators to dataset: TSLA
+2024-11-17 12:49:54,385 - INFO - Adding technical indicators to dataset: SPY
+2024-11-17 12:49:54,391 - INFO - Adding technical indicators to dataset: BND
+2024-11-17 12:50:16,499 - INFO - Plotting column: Close from dataset: TSLA
+2024-11-17 12:50:16,763 - INFO - Plot for Close generated successfully.
+2024-11-17 12:50:16,763 - INFO - Plotting column: Close from dataset: SPY
+2024-11-17 12:50:17,010 - INFO - Plot for Close generated successfully.
+2024-11-17 12:50:17,012 - INFO - Plotting column: Close from dataset: BND
+2024-11-17 12:50:17,316 - INFO - Plot for Close generated successfully.
+2024-11-17 13:31:45,470 - INFO - Logger initialized. Log file: logs\task1_pipeline.log
+2024-11-17 13:31:49,242 - INFO - Logger initialized. Log file: logs\task1_pipeline.log
+2024-11-17 13:31:49,796 - INFO - Loading datasets.
+2024-11-17 13:31:49,796 - INFO - Loading data from ../data/raw/TSLA_data.csv
+2024-11-17 13:31:50,952 - INFO - Data loaded successfully. Shape: (2014, 7)
+2024-11-17 13:31:50,953 - INFO - Loading data from ../data/raw/SPY_data.csv
+2024-11-17 13:31:52,406 - INFO - Data loaded successfully. Shape: (2014, 7)
+2024-11-17 13:31:52,406 - INFO - Loading data from ../data/raw/BND_data.csv
+2024-11-17 13:31:52,490 - INFO - Data loaded successfully. Shape: (2014, 7)
+2024-11-17 13:31:52,774 - INFO - Cleaning datasets.
+2024-11-17 13:31:52,777 - INFO - Cleaning dataset: TSLA
+2024-11-17 13:31:52,778 - INFO - Starting data cleaning.
+2024-11-17 13:31:52,781 - INFO - Initial data shape: (2014, 7)
+2024-11-17 13:31:53,222 - INFO - Final data shape: (2014, 6)
+2024-11-17 13:31:53,223 - INFO - Data cleaning completed.
+2024-11-17 13:31:53,224 - INFO - Cleaning dataset: SPY
+2024-11-17 13:31:53,226 - INFO - Starting data cleaning.
+2024-11-17 13:31:53,227 - INFO - Initial data shape: (2014, 7)
+2024-11-17 13:31:53,233 - INFO - Final data shape: (2014, 6)
+2024-11-17 13:31:53,233 - INFO - Data cleaning completed.
+2024-11-17 13:31:53,240 - INFO - Cleaning dataset: BND
+2024-11-17 13:31:53,242 - INFO - Starting data cleaning.
+2024-11-17 13:31:53,243 - INFO - Initial data shape: (2014, 7)
+2024-11-17 13:31:53,245 - INFO - Final data shape: (2014, 6)
+2024-11-17 13:31:53,245 - INFO - Data cleaning completed.
+2024-11-17 13:31:53,264 - INFO - Performing EDA for dataset: TSLA
+2024-11-17 13:31:53,393 - INFO - Summary statistics:
+              Open         High          Low        Close    Adj Close  \
+count  2014.000000  2014.000000  2014.000000  2014.000000  2014.000000   
+mean     88.743650    90.735609    86.534925    88.662189    88.662189   
+std     108.718116   111.222595   105.875776   108.557913   108.557913   
+min       9.488000    10.331333     9.403333     9.578000     9.578000   
+25%      16.224167    16.458333    15.943500    16.217167    16.217167   
+50%      21.819667    22.206667    21.492333    21.881333    21.881333   
+75%     183.808338   186.592499   178.937500   182.904999   182.904999   
+max     411.470001   414.496674   405.666656   409.970001   409.970001   
+
+             Volume  
+count  2.014000e+03  
+mean   1.113914e+08  
+std    8.025481e+07  
+min    1.062000e+07  
+25%    6.335325e+07  
+50%    8.762100e+07  
+75%    1.275895e+08  
+max    9.140820e+08  
+2024-11-17 13:31:53,396 - INFO - Correlation matrix:
+               Open      High       Low     Close  Adj Close    Volume
+Open       1.000000  0.999674  0.999516  0.999037   0.999037 -0.101789
+High       0.999674  1.000000  0.999531  0.999561   0.999561 -0.097010
+Low        0.999516  0.999531  1.000000  0.999614   0.999614 -0.106888
+Close      0.999037  0.999561  0.999614  1.000000   1.000000 -0.100995
+Adj Close  0.999037  0.999561  0.999614  1.000000   1.000000 -0.100995
+Volume    -0.101789 -0.097010 -0.106888 -0.100995  -0.100995  1.000000
+2024-11-17 13:31:53,440 - INFO - Outliers identified: 42
+2024-11-17 13:31:53,458 - DEBUG - locator: <matplotlib.ticker.AutoLocator object at 0x000001FA1C6D6750>
+2024-11-17 13:31:53,939 - INFO - Performing EDA for dataset: SPY
+2024-11-17 13:31:53,970 - INFO - Summary statistics:
+              Open         High          Low        Close    Adj Close  \
+count  2014.000000  2014.000000  2014.000000  2014.000000  2014.000000   
+mean    297.732294   299.417815   295.867716   297.755636   273.957763   
+std      80.871703    81.471799    80.177458    80.853811    85.302952   
+min     182.339996   184.100006   181.020004   182.860001   157.328537   
+25%     226.322498   226.757500   225.507496   226.255001   198.774570   
+50%     279.395004   280.580002   277.994995   279.330002   254.202118   
+75%     367.944992   370.119995   364.459999   366.842506   349.701157   
+max     479.220001   479.980011   476.059998   477.709991   458.720306   
+
+             Volume  
+count  2.014000e+03  
+mean   9.187613e+07  
+std    4.765484e+07  
+min    2.027000e+07  
+25%    6.037552e+07  
+50%    7.905045e+07  
+75%    1.080564e+08  
+max    5.072443e+08  
+2024-11-17 13:31:53,980 - INFO - Correlation matrix:
+               Open      High       Low     Close  Adj Close    Volume
+Open       1.000000  0.999738  0.999656  0.999422   0.998759 -0.231471
+High       0.999738  1.000000  0.999424  0.999624   0.999260 -0.221382
+Low        0.999656  0.999424  1.000000  0.999671   0.998675 -0.246012
+Close      0.999422  0.999624  0.999671  1.000000   0.999286 -0.235608
+Adj Close  0.998759  0.999260  0.998675  0.999286   1.000000 -0.226777
+Volume    -0.231471 -0.221382 -0.246012 -0.235608  -0.226777  1.000000
+2024-11-17 13:31:53,990 - INFO - Outliers identified: 42
+2024-11-17 13:31:54,005 - DEBUG - locator: <matplotlib.ticker.AutoLocator object at 0x000001FA1BC29E50>
+2024-11-17 13:31:54,370 - INFO - Performing EDA for dataset: BND
+2024-11-17 13:31:54,372 - INFO - Summary statistics:
+              Open         High          Low        Close    Adj Close  \
+count  2014.000000  2014.000000  2014.000000  2014.000000  2014.000000   
+mean     82.119682    82.225814    82.002612    82.115015    70.047950   
+std       3.744186     3.726866     3.753981     3.740979     5.329671   
+min      69.139999    69.580002    69.089996    69.379997    62.637558   
+25%      80.447502    80.532499    80.244999    80.430000    65.995964   
+50%      82.035000    82.139999    81.930000    82.029999    67.568302   
+75%      84.570000    84.709999    84.465000    84.622498    75.097788   
+max      89.550003    89.589996    89.440002    89.480003    79.812950   
+
+             Volume  
+count  2.014000e+03  
+mean   3.705960e+06  
+std    2.488405e+06  
+min    0.000000e+00  
+25%    1.843650e+06  
+50%    2.905900e+06  
+75%    5.016900e+06  
+max    2.479270e+07  
+2024-11-17 13:31:54,372 - INFO - Correlation matrix:
+               Open      High       Low     Close  Adj Close    Volume
+Open       1.000000  0.998967  0.998603  0.998417   0.603090 -0.033129
+High       0.998967  1.000000  0.997215  0.999014   0.607769 -0.019434
+Low        0.998603  0.997215  1.000000  0.998675   0.599090 -0.048537
+Close      0.998417  0.999014  0.998675  1.000000   0.604387 -0.034605
+Adj Close  0.603090  0.607769  0.599090  0.604387   1.000000  0.508142
+Volume    -0.033129 -0.019434 -0.048537 -0.034605   0.508142  1.000000
+2024-11-17 13:31:54,394 - INFO - Outliers identified: 42
+2024-11-17 13:31:54,433 - DEBUG - locator: <matplotlib.ticker.AutoLocator object at 0x000001FA1BB5B150>
+2024-11-17 13:31:54,659 - INFO - Applying feature engineering.
+2024-11-17 13:31:54,691 - INFO - Adding technical indicators to dataset: TSLA
+2024-11-17 13:31:54,696 - INFO - Adding technical indicators to dataset: SPY
+2024-11-17 13:31:54,700 - INFO - Adding technical indicators to dataset: BND
+2024-11-17 13:31:54,776 - INFO - Plotting column: Close from dataset: TSLA
+2024-11-17 13:31:54,988 - INFO - Plot for Close generated successfully.
+2024-11-17 13:31:54,988 - INFO - Plotting column: Close from dataset: SPY
+2024-11-17 13:31:55,199 - INFO - Plot for Close generated successfully.
+2024-11-17 13:31:55,199 - INFO - Plotting column: Close from dataset: BND
+2024-11-17 13:31:55,439 - INFO - Plot for Close generated successfully.
