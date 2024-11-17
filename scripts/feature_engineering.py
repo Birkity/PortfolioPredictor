@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def add_technical_indicators(data: pd.DataFrame) -> pd.DataFrame:
     """
