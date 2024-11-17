@@ -1,1 +1,66 @@
 2024-11-17 14:22:18,505 - INFO - Logger initialized. Log file: logs\task2_mlflow_forecasting.log
+2024-11-17 14:30:58,543 - INFO - Logger initialized. Log file: logs\task2_mlflow_forecasting.log
+2024-11-17 14:31:12,986 - INFO - Task 2: Forecasting Pipeline with Multiple Datasets Started.
+2024-11-17 15:12:27,412 - INFO - Started MLflow experiment: Time Series Forecasting - Task 2
+2024-11-17 15:16:03,081 - INFO - Processing dataset: TSLA
+2024-11-17 15:16:04,221 - INFO - Processing dataset: SPY
+2024-11-17 15:16:04,235 - INFO - Processing dataset: BND
+2024-11-17 15:17:23,720 - INFO - Processing dataset: TSLA
+2024-11-17 15:17:23,754 - INFO - Training ARIMA for TSLA with order (0, 1, 1)...
+2024-11-17 15:17:23,756 - INFO - Starting ARIMA training with order (0, 1, 1).
+2024-11-17 15:17:28,122 - INFO - ARIMA training completed with order (0, 1, 1).
+2024-11-17 15:19:01,003 - INFO - Logged model: arima_model_TSLA to MLflow.
+2024-11-17 15:19:01,003 - INFO - Processing dataset: SPY
+2024-11-17 15:19:01,003 - INFO - Training ARIMA for SPY with order (3, 1, 1)...
+2024-11-17 15:19:01,003 - INFO - Starting ARIMA training with order (3, 1, 1).
+2024-11-17 15:19:01,783 - INFO - ARIMA training completed with order (3, 1, 1).
+2024-11-17 15:20:09,074 - INFO - Logger initialized. Log file: logs\task2_mlflow_forecasting.log
+2024-11-17 15:20:09,154 - INFO - Task 2: Forecasting Pipeline with Multiple Datasets Started.
+2024-11-17 15:20:09,929 - INFO - Processing dataset: TSLA
+2024-11-17 15:20:09,935 - INFO - Training ARIMA for TSLA with order (0, 1, 1)...
+2024-11-17 15:20:09,937 - INFO - Starting ARIMA training with order (0, 1, 1).
+2024-11-17 15:20:10,026 - INFO - ARIMA training completed with order (0, 1, 1).
+2024-11-17 15:20:14,395 - INFO - Logged model: arima_model_TSLA to MLflow.
+2024-11-17 15:20:14,396 - INFO - Processing dataset: SPY
+2024-11-17 15:20:14,399 - INFO - Training ARIMA for SPY with order (3, 1, 1)...
+2024-11-17 15:20:14,399 - INFO - Starting ARIMA training with order (3, 1, 1).
+2024-11-17 15:20:14,785 - INFO - ARIMA training completed with order (3, 1, 1).
+2024-11-17 15:23:21,497 - INFO - Processing dataset: TSLA
+2024-11-17 15:24:08,152 - INFO - Logger initialized. Log file: logs\task2_mlflow_forecasting.log
+2024-11-17 15:24:08,270 - INFO - Task 2: Forecasting Pipeline with Multiple Datasets Started.
+2024-11-17 15:24:08,452 - INFO - Processing dataset: TSLA
+2024-11-17 15:24:08,707 - INFO - Training ARIMA for TSLA with order (0, 1, 1)...
+2024-11-17 15:24:08,707 - INFO - Starting ARIMA training with order (0, 1, 1).
+2024-11-17 15:24:08,887 - INFO - ARIMA training completed with order (0, 1, 1).
+2024-11-17 15:24:13,487 - INFO - Logged model: arima_model_TSLA to MLflow.
+2024-11-17 15:24:13,487 - INFO - Completed processing for TSLA. Metrics: {'MAE': np.float64(178.48832758615592), 'RMSE': np.float64(202.56084136042602)}
+2024-11-17 15:24:13,487 - INFO - Processing dataset: SPY
+2024-11-17 15:24:13,577 - INFO - Training ARIMA for SPY with order (3, 1, 1)...
+2024-11-17 15:24:13,586 - INFO - Starting ARIMA training with order (3, 1, 1).
+2024-11-17 15:24:13,906 - INFO - ARIMA training completed with order (3, 1, 1).
+2024-11-17 15:24:17,968 - INFO - Logged model: arima_model_SPY to MLflow.
+2024-11-17 15:24:17,969 - INFO - Completed processing for SPY. Metrics: {'MAE': np.float64(75.55185254199635), 'RMSE': np.float64(87.56082771996167)}
+2024-11-17 15:24:17,970 - INFO - Processing dataset: BND
+2024-11-17 15:24:18,061 - INFO - Training ARIMA for BND with order (0, 1, 0)...
+2024-11-17 15:24:18,061 - INFO - Starting ARIMA training with order (0, 1, 0).
+2024-11-17 15:24:18,167 - INFO - ARIMA training completed with order (0, 1, 0).
+2024-11-17 15:24:21,837 - INFO - Logged model: arima_model_BND to MLflow.
+2024-11-17 15:24:21,837 - INFO - Completed processing for BND. Metrics: {'MAE': np.float64(4.004515148344494), 'RMSE': np.float64(4.31833703878107)}
+2024-11-17 15:27:16,094 - INFO - Processing dataset: TSLA
+2024-11-17 15:27:16,344 - INFO - Training ARIMA for TSLA with order (0, 1, 1)...
+2024-11-17 15:27:16,345 - INFO - Starting ARIMA training with order (0, 1, 1).
+2024-11-17 15:27:16,400 - INFO - ARIMA training completed with order (0, 1, 1).
+2024-11-17 15:27:20,411 - INFO - Logged model: arima_model_TSLA to MLflow.
+2024-11-17 15:27:20,419 - INFO - Completed processing for TSLA. Metrics: {'MAE': np.float64(178.48832758615592), 'RMSE': np.float64(202.56084136042602)}
+2024-11-17 15:27:20,423 - INFO - Processing dataset: SPY
+2024-11-17 15:27:20,573 - INFO - Training ARIMA for SPY with order (3, 1, 1)...
+2024-11-17 15:27:20,573 - INFO - Starting ARIMA training with order (3, 1, 1).
+2024-11-17 15:27:20,873 - INFO - ARIMA training completed with order (3, 1, 1).
+2024-11-17 15:27:24,309 - INFO - Logged model: arima_model_SPY to MLflow.
+2024-11-17 15:27:24,310 - INFO - Completed processing for SPY. Metrics: {'MAE': np.float64(75.55185254199635), 'RMSE': np.float64(87.56082771996167)}
+2024-11-17 15:27:24,314 - INFO - Processing dataset: BND
+2024-11-17 15:27:24,411 - INFO - Training ARIMA for BND with order (0, 1, 0)...
+2024-11-17 15:27:24,411 - INFO - Starting ARIMA training with order (0, 1, 0).
+2024-11-17 15:27:24,474 - INFO - ARIMA training completed with order (0, 1, 0).
+2024-11-17 15:27:27,809 - INFO - Logged model: arima_model_BND to MLflow.
+2024-11-17 15:27:27,809 - INFO - Completed processing for BND. Metrics: {'MAE': np.float64(4.004515148344494), 'RMSE': np.float64(4.31833703878107)}
