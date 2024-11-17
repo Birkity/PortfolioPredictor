@@ -1,13 +1,14 @@
 import logging
-from pmdarima import auto_arima
+from statsmodels.tsa.arima.model import ARIMA
 
-def train_auto_arima(data, seasonal=False, m=1):
-  
-    logging.info(f"Training Auto ARIMA model. Seasonal: {seasonal}, Periodicity: {m}.")
-    try:
-        model = auto_arima(data, seasonal=seasonal, m=m, trace=True, error_action='ignore', suppress_warnings=True)
-        logging.info(f"Auto ARIMA selected order: {model.order}. AIC: {model.aic()}.")
-        return model
-    except Exception as e:
-        logging.error(f"Error during Auto ARIMA training: {str(e)}")
-        raise
+def train_arima(train_data, order):
+    """
+    :param train_data: Training time series data
+    :param order: ARIMA model order (p, d, q)
+    :return: Trained ARIMA model
+    """
+    logging.info(f"Starting ARIMA training with order {order}.")
+    model = ARIMA(train_data, order=order)
+    fitted_model = model.fit()
+    logging.info(f"ARIMA training completed with order {order}.")
+    return fitted_model
