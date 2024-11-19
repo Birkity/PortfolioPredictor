@@ -7,3 +7,4 @@ notebooks/mlruns/
 mlruns/
 results
 *.pkl
+models/
