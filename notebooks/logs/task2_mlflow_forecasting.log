@@ -130,3 +130,56 @@
 2024-11-17 17:17:50,904 - INFO - LSTM model trained successfully.
 2024-11-17 17:30:13,137 - INFO - Logger initialized. Log file: logs\task2_mlflow_forecasting.log
 2024-11-17 17:30:13,366 - INFO - Task 2: Forecasting Pipeline with Multiple Datasets Started.
+2024-11-17 17:30:14,812 - INFO - Processing dataset: TSLA
+2024-11-17 17:30:15,348 - INFO - Training ARIMA for TSLA with order (0, 1, 1)...
+2024-11-17 17:30:15,348 - INFO - Starting ARIMA training with order (0, 1, 1).
+2024-11-17 17:30:16,049 - INFO - ARIMA training completed with order (0, 1, 1).
+2024-11-17 17:31:04,992 - INFO - Logged model: arima_model_TSLA to MLflow.
+2024-11-17 17:31:05,039 - INFO - Completed processing for TSLA. Metrics: {'MAE': np.float64(178.48832758615592), 'RMSE': np.float64(202.56084136042602)}
+2024-11-17 17:31:05,039 - INFO - Processing dataset: SPY
+2024-11-17 17:31:05,549 - INFO - Training ARIMA for SPY with order (3, 1, 1)...
+2024-11-17 17:31:05,549 - INFO - Starting ARIMA training with order (3, 1, 1).
+2024-11-17 17:31:05,996 - INFO - ARIMA training completed with order (3, 1, 1).
+2024-11-17 17:31:11,516 - INFO - Logged model: arima_model_SPY to MLflow.
+2024-11-17 17:31:11,516 - INFO - Completed processing for SPY. Metrics: {'MAE': np.float64(75.55185254199635), 'RMSE': np.float64(87.56082771996167)}
+2024-11-17 17:31:11,532 - INFO - Processing dataset: BND
+2024-11-17 17:31:11,599 - INFO - Training ARIMA for BND with order (0, 1, 0)...
+2024-11-17 17:31:11,599 - INFO - Starting ARIMA training with order (0, 1, 0).
+2024-11-17 17:31:11,666 - INFO - ARIMA training completed with order (0, 1, 0).
+2024-11-17 17:31:15,719 - INFO - Logged model: arima_model_BND to MLflow.
+2024-11-17 17:31:15,719 - INFO - Completed processing for BND. Metrics: {'MAE': np.float64(4.004515148344494), 'RMSE': np.float64(4.31833703878107)}
+2024-11-17 17:31:16,520 - INFO - MLflow experiment ended.
+2024-11-17 17:31:16,520 - INFO - Task 2: Forecasting Pipeline Completed.
+2024-11-17 17:31:16,939 - INFO - Processing dataset: TSLA
+2024-11-17 17:31:16,939 - INFO - Training SARIMA for TSLA...
+2024-11-17 17:31:16,939 - INFO - Training SARIMA model with order (1, 1, 1) and seasonal order (1, 1, 1, 12).
+2024-11-17 17:31:19,816 - INFO - SARIMA model trained successfully. AIC: 1980.534372674969.
+2024-11-17 17:31:36,483 - INFO - Processing dataset: SPY
+2024-11-17 17:31:36,483 - INFO - Training SARIMA for SPY...
+2024-11-17 17:31:36,483 - INFO - Training SARIMA model with order (2, 1, 2) and seasonal order (0, 1, 1, 12).
+2024-11-17 17:31:39,516 - INFO - SARIMA model trained successfully. AIC: 5095.6537176047805.
+2024-11-17 17:31:48,553 - INFO - Processing dataset: BND
+2024-11-17 17:31:48,555 - INFO - Training SARIMA for BND...
+2024-11-17 17:31:48,556 - INFO - Training SARIMA model with order (0, 1, 1) and seasonal order (1, 0, 0, 12).
+2024-11-17 17:31:48,733 - INFO - SARIMA model trained successfully. AIC: -1471.8426073419057.
+2024-11-17 17:31:55,013 - INFO - Processing dataset: TSLA
+2024-11-17 17:31:55,013 - INFO - Training LSTM...
+2024-11-17 17:31:55,013 - INFO - Data preprocessed for LSTM. Total sequences: 1198.
+2024-11-17 17:31:55,029 - INFO - Data preprocessed for LSTM. Total sequences: 696.
+2024-11-17 17:31:57,135 - INFO - LSTM model built and compiled.
+2024-11-17 17:31:57,135 - INFO - Training LSTM model. Epochs: 50, Batch size: 32.
+2024-11-17 17:33:00,520 - INFO - LSTM model trained successfully.
+2024-11-17 17:34:12,406 - INFO - Processing dataset: SPY
+2024-11-17 17:34:12,406 - INFO - Training LSTM...
+2024-11-17 17:34:12,406 - INFO - Data preprocessed for LSTM. Total sequences: 1198.
+2024-11-17 17:34:12,406 - INFO - Data preprocessed for LSTM. Total sequences: 696.
+2024-11-17 17:34:12,457 - INFO - LSTM model built and compiled.
+2024-11-17 17:34:12,458 - INFO - Training LSTM model. Epochs: 50, Batch size: 32.
+2024-11-17 17:35:47,693 - INFO - LSTM model trained successfully.
+2024-11-17 17:36:00,164 - INFO - Processing dataset: BND
+2024-11-17 17:36:00,179 - INFO - Training LSTM...
+2024-11-17 17:36:00,179 - INFO - Data preprocessed for LSTM. Total sequences: 1198.
+2024-11-17 17:36:00,179 - INFO - Data preprocessed for LSTM. Total sequences: 696.
+2024-11-17 17:36:00,227 - INFO - LSTM model built and compiled.
+2024-11-17 17:36:00,242 - INFO - Training LSTM model. Epochs: 50, Batch size: 32.
+2024-11-17 17:37:14,322 - INFO - LSTM model trained successfully.
