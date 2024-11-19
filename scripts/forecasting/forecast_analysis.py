@@ -7,12 +7,18 @@ import numpy as np
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 
-def load_model(model_type, model_name):
-    model_path = f"models/{model_type.lower()}_{model_name.lower()}/model.pkl"
+def load_model(model_type, dataset_name):
+    base_path = r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\models"
+    model_path = os.path.join(base_path, f"{model_type.lower()}_{dataset_name.lower()}", "model.pkl")
+    
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"Model file not found at {model_path}")
+    
     with open(model_path, "rb") as f:
         model = pickle.load(f)
-    logging.info(f"Loaded {model_type} model for {model_name} from {model_path}.")
+    logging.info(f"Loaded {model_type} model for {dataset_name} from {model_path}.")
     return model
+
 
 def forecast_and_visualize(model, data, steps, model_name, model_type):
     forecast = model.get_forecast(steps=steps)
@@ -36,9 +42,9 @@ def forecast_and_visualize(model, data, steps, model_name, model_type):
 
 def main():
     datasets = {
-        "TSLA": "../data/processed/TSLA_processed.csv",
-        "SPY": "../data/processed/SPY_processed.csv",
-        "BND": "../data/processed/BND_processed.csv"
+        "TSLA": r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\data\processed\TSLA_processed.csv",
+        "SPY": r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\data\processed\SPY_processed.csv",
+        "BND": r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\data\processed\BND_processed.csv"
     }
     steps = 252  # Approx. one year of trading days
 

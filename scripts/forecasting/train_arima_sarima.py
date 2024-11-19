@@ -18,7 +18,8 @@ def train_and_save_model(data, model_type, model_name, order=None, seasonal_orde
     logging.info(f"Training {model_type} model for {model_name}...")
     fitted_model = model.fit()
 
-    model_path = f"models/{model_type.lower()}_{model_name.lower()}/"
+    base_path = r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\models"
+    model_path = os.path.join(base_path, f"{model_type.lower()}_{data.lower()}", "model.pkl")
     os.makedirs(model_path, exist_ok=True)
 
     with open(os.path.join(model_path, "model.pkl"), "wb") as f:
@@ -29,9 +30,9 @@ def train_and_save_model(data, model_type, model_name, order=None, seasonal_orde
 
 def main():
     datasets = {
-        "TSLA": "../data/processed/TSLA_processed.csv",
-        "SPY": "../data/processed/SPY_processed.csv",
-        "BND": "../data/processed/BND_processed.csv"
+        "TSLA": r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\data\processed\TSLA_processed.csv",
+        "SPY": r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\data\processed\SPY_processed.csv",
+        "BND": r"C:\Users\USER\Documents\OPLearning\10_Academy\Week_11\data\processed\BND_processed.csv"
     }
 
     for dataset_name, file_path in datasets.items():
