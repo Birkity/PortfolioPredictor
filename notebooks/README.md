@@ -28,27 +28,6 @@ This project is part of a larger effort to improve and refine coding submissions
 
 ---
 
-### **📂 Project Structure**
-
-```
-project/
-├── scripts/                  # Modular scripts for pipeline tasks
-│   ├── __init__.py           # Script package initializer
-│   ├── data_loader.py        # Data loading functionality
-│   ├── data_cleaning.py      # Data cleaning functionality
-│   ├── eda.py                # Exploratory Data Analysis
-│   ├── visualization.py      # Visualization tools
-│   ├── logging_config.py     # Centralized logging configuration
-├── data/                     # Data directory
-│   ├── raw/                  # Raw datasets (TSLA, SPY, BND)
-│   ├── processed/            # Processed datasets (future)
-├── logs/                     # Logs directory
-│   ├── task1_pipeline.log    # Logs for task 1
-├── notebooks/                # Jupyter Notebooks
-│   ├── task1.ipynb           # End-to-end pipeline notebook for task 1
-└── README.md                 # Documentation for the project
-```
-
 ---
 
 ### **🔧 Features**
